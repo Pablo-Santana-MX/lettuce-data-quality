@@ -1,61 +1,45 @@
-# lettuce-data-quality
-Data Quality and Statistical Analysis applied to lettuce growth datasets. Proyecto bilingüe (ES/EN).
-# Lettuce Growth Data Quality Project 🌱
+<div align="center">
+  <h1>🌱 Agritech Decision Intelligence: Lettuce Yield Optimization</h1>
+  <p><i>From Data Governance to Predictive Modeling and Prescriptive Recommendations</i></p>
+  
+  <img src="https://img.shields.io/badge/Python-3.12-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python" />
+  <img src="https://img.shields.io/badge/Machine_Learning-scikit--learn-F7931E?style=for-the-badge&logo=scikit-learn&logoColor=white" alt="Scikit-Learn" />
+  <img src="https://img.shields.io/badge/Streamlit-Live_App-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
+</div>
 
-## Español 🇲🇽
+## 🔬 1. Project Overview
+Traditional agriculture relies heavily on human intuition. This project transforms raw hydroponic/soil lettuce growth data into an automated **Decision Intelligence System**. It not only enforces strict data quality protocols but also predicts final crop yield and provides actionable biochemical/environmental recommendations to farmers.
 
-Este proyecto demuestra cómo aplicar **Data Quality** y **Análisis de Datos** en un contexto agrícola (cultivo de lechugas).  
-Forma parte de mi portafolio como **Analista de Datos / Especialista en Calidad de Datos**.
+## 🧪 2. Architecture & Methodology
 
-### Objetivos
-- Validar y limpiar datos experimentales de crecimiento de lechugas.
-- Detectar inconsistencias, duplicados y valores faltantes.
-- Analizar correlaciones entre condiciones ambientales y rendimiento.
-- Visualizar resultados en un dashboard interactivo.
+### Phase 1: Data Governance & ETL
+*   **Objective:** Sanitize raw sensor and manual entry data.
+*   **Process:** Automated anomaly detection (e.g., impossible pH levels, extreme humidity outliers) ensuring robust data integrity before entering the modeling phase.
 
-### Entregables
-- Dataset limpio y documentado.
-- Informe ejecutivo bilingüe (ES/EN).
-- Diccionario de datos.
-- Dashboard interactivo en Power BI.
+### Phase 2: Predictive Analytics (Machine Learning)
+*   **Objective:** Forecast final lettuce yield (grams/head) based on early-stage environmental variables (Temperature, Humidity, pH, Water Volume).
+*   **Model:** Implementation of a regression algorithm (Random Forest / XGBoost) to capture non-linear biological and chemical relationships.
 
-### Tecnologías
-- Python (pandas, matplotlib, seaborn)
-- Power BI
-- Excel
+### Phase 3: Prescriptive Recommendation Engine
+*   **Objective:** Move beyond prediction to prescribe actionable operational changes.
+*   **Mechanism:** An optimization algorithm that analyzes the current crop state and prescribes specific adjustments (e.g., *"Reduce pH by 0.5 and increase irrigation by 10% to achieve a +15% yield increase"*).
 
-### Resultados clave
-- Se identificaron **outliers** en días de crecimiento bajo condiciones extremas de humedad.
-- El rango óptimo de pH (6–7) mostró mayor rendimiento.
-- El 92% de los datos cumplen con criterios de calidad (unicidad, consistencia).
+## 📊 3. Interactive Dashboard
+The entire pipeline is designed to be deployed via an interactive **Streamlit** dashboard. This allows non-technical agricultural stakeholders to input current greenhouse metrics and instantly receive yield predictions and operational recommendations.
 
----
+## 🚀 4. Repository Structure
+```text
+├── data/                  # Raw and sanitized datasets
+├── notebooks/             
+│   ├── 01_ETL_and_Data_Quality.ipynb
+│   ├── 02_Yield_Prediction_Model.ipynb
+│   └── 03_Recommendation_Engine.ipynb
+├── app/                   # Streamlit dashboard source code
+└── README.md
+```
+## 📬 5. Contact
+**Pablo Alberto Santana Flores**
+*Data Scientist | PhD in Marine Sciences | Decision Intelligence | Chemical Engineer*
 
-## English 🌍
-
-This project demonstrates how to apply **Data Quality** and **Data Analysis** in an agricultural context (lettuce growth).  
-It is part of my portfolio as a **Data Analyst / Data Quality Specialist**.
-
-### Objectives
-- Validate and clean experimental lettuce growth data.
-- Detect inconsistencies, duplicates, and missing values.
-- Analyze correlations between environmental conditions and yield.
-- Visualize results in an interactive dashboard.
-
-### Deliverables
-- Cleaned and documented dataset.
-- Bilingual executive summary (ES/EN).
-- Data dictionary.
-- Interactive Power BI dashboard.
-
-### Technologies
-- Python (pandas, matplotlib, seaborn)
-- Power BI
-- Excel
-
-### Key Findings
-- **Outliers** were identified in growth days under extreme humidity conditions.
-- Optimal pH range (6–7) showed higher yield.
-- 92% of the data meets quality criteria (uniqueness, consistency).
-
----
+* 💼 **LinkedIn:** [linkedin.com/in/pablo-santana-mx](https://www.linkedin.com/in/pablo-santana-mx)
+* 🐙 **GitHub:** [github.com/Pablo-Santana-MX](https://github.com/Pablo-Santana-MX)
